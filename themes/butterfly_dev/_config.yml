@@ -5,11 +5,11 @@
 # xxx || icon:
 #   xxx || 連結 || icon
 menu:
-  主页: / || fa fa-home
-  归档: /archives/ || fa fa-archive
+  首页: / || fa fa-home
+  时间轴: /archives/ || fa fa-archive
   标签: /tags/ || fa fa-tags
   分类: /categories/ || fa fa-folder-open
-  # Link: /link/ || fa fa-link
+  # 友链: /link/ || fa fa-link
   关于: /about/ || fa fa-heart
   # List||fa fa-list:
   #   - Music || /music/ || fa fa-music
@@ -33,8 +33,8 @@ favicon: /img/favicon.ico
 
 # Highlight theme
 # ---------------
-highlight_theme: light
-highlight_copy: true #代碼複製按鈕
+highlight_theme: light # default, light, darker, pale night, ocean
+highlight_copy: false #代碼複製按鈕
 highlight_lang: true #代碼語言顯示
 highlight_shrink: false #代碼框不展開，需點擊 '>' 打開
 
@@ -101,7 +101,7 @@ google_analytics:
 # Post info settings
 # ---------------
 # avatar: /img/avatar.png
-avatar: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/avatar.png
+avatar: ""
 
 # the banner image of index
 top_img: ""
@@ -121,13 +121,13 @@ default_cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg
 archive_img: ""
 
 # the banner image of tag page
-tag_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/tag-bg.png
+tag_img: ""
 
 # the banner image of category page
-category_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/category-bg
+category_img: "" 
 
 # 如果你有使用hexo-douban去生成movie界面，可配置這個
-movies_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/movie.jpg
+movies_img: ""
 
 # if the photo link cannot connect,it will show that
 lodding_bg:
@@ -214,7 +214,7 @@ valine:
   verify: false # valine verify code (true/false)
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: zh-TW # i18n: zh-cn/en
+  lang: zh-CN # i18n: zh-cn/en
   placeholder: Please leave your footprints # valine comment input placeholder(like: Please leave your footprints )
   guest_info: nick,mail,link #valine comment header info
   bg: /img/comment_bg.png # valine background
@@ -352,7 +352,7 @@ activate_power_mode:
 # 避免卡頓，建議只開啓一個
 # 點擊烟火特效
 fireworks:
-  enable: false
+  enable: true
 
 # 點擊出現愛心
 click_heart:
@@ -422,15 +422,18 @@ subtitle:
   source: false
   # (如果有英文逗號' , '，請使用轉義字符 &#44;)
   sub:
-    - 从现在开始&#44;努力修行
+    - 开始修行
     - Never put off till tomorrow what you can do today
 
 
 ####    側邊欄    ####
 #-------------------------------------
+# 手機頁面（ 顯示寬度 < 768px ）是否顯示aside内容
+aside_mobile: true
+
 # 側邊欄顯示設置
 aside:
-  position: right # left or right
+  position: left # left or right
   card_author: true
   card_announcement: true
   card_recent_post: true
@@ -441,7 +444,7 @@ aside:
 
 # 網站公告
 announcement:
-  content: 感謝訪問本站，若喜歡請收藏 ^_^
+  content: 您好！欢迎光临 ^_^
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -455,7 +458,7 @@ busuanzi:
 # 也可以寫成 年/月/日 時間
 runtimeshow:
   enable: true
-  start_date: 6/7/2018 00:00:00
+  start_date: 11/25/2019 00:00:00
 
 ####   右下角按鈕  ####
 #----------------------------------------------
@@ -463,13 +466,13 @@ runtimeshow:
 translate:
   enable: true
   # 默認按鈕顯示文字
-  default: 简
+  default: 繁
   #网站默认语言，1: 繁體中文, 2: 简体中文
   defaultEncoding: 2
   #延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
   translateDelay: 0
   #博客网址
-  cookieDomain: "https://xxx/"
+  cookieDomain: "https://thxu.site"
   #當文字是簡體時，按鈕顯示的文字
   msgToTraditionalChinese: "繁"
   #當文字是繁體時，按鈕顯示的文字
