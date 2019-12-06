@@ -193,6 +193,14 @@ disqus:
 # enable: false
 # uid:
 
+gitalk:
+  enable: true
+  client_id: 3307afc19edbaa45a1ef
+  client_secret: 6ae6ffa062098151e8771a24f388903da6fda783
+  repo: thxu.github.io
+  owner: thxu
+  admin: "['thxu']"
+  
 # gitalk:
 #   enable: false
 #   client_id:
@@ -337,7 +345,7 @@ canvas_ribbon_piao:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
