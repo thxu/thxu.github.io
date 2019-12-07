@@ -5,15 +5,15 @@
 # xxx || icon:
 #   xxx || 連結 || icon
 menu:
-  主页: / || fa fa-home
-  归档: /archives/ || fa fa-archive
-  标签: /tags/ || fa fa-tags
-  分类: /categories/ || fa fa-folder-open
-  # Link: /link/ || fa fa-link
-  关于: /about/ || fa fa-heart
-  # List||fa fa-list:
-  #   - Music || /music/ || fa fa-music
-  #   - Movie || /movies/ || fa fa-film
+  Home: / || fa fa-home
+  Archives: /archives/ || fa fa-archive
+  Tags: /tags/ || fa fa-tags
+  Categories: /categories/ || fa fa-folder-open
+  Link: /link/ || fa fa-link
+  About: /about/ || fa fa-heart
+  List||fa fa-list:
+    - Music || /music/ || fa fa-music
+    - Movie || /movies/ || fa fa-film
 
 # Favicon
 # ---------------
@@ -34,7 +34,7 @@ favicon: /img/favicon.ico
 # Highlight theme
 # ---------------
 highlight_theme: light
-highlight_copy: true #代碼複製按鈕
+highlight_copy: false #代碼複製按鈕
 highlight_lang: true #代碼語言顯示
 highlight_shrink: false #代碼框不展開，需點擊 '>' 打開
 
@@ -52,8 +52,8 @@ copy:
 #   icon: link
 # ---------------
 social:
-  fa fa-github: https://github.com/thxu
-  fa fa-envelope: mailto:2929458764@qq.com
+  fa fa-github: https://github.com/jerryc127
+  fa fa-envelope: mailto:xxxxxxxx@gmail.com
   fa fa-rss: /atom.xml
 
 ####    search    ####
@@ -104,7 +104,7 @@ google_analytics:
 avatar: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/avatar.png
 
 # the banner image of index
-top_img: ""
+top_img: https://i.loli.net/2019/05/22/5ce53eb6dc82757840.jpg
 # 以下鏈接是動態壁紙，每次刷新會更換
 # https://source.unsplash.com/collection/collectionid/1600x900
 # https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture
@@ -112,13 +112,13 @@ top_img: ""
 # https://api.dujin.org/bing/1366.php
 
 # if the banner of page not setting,it will show the top_img
-default_top_img: ""
+default_top_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/top_img_index.jpg
 
 # the default cover of the post
 default_cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/cover/default_bg.png
 
 # the banner image of archive page
-archive_img: ""
+archive_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN@latest/Photo/archive.jpg
 
 # the banner image of tag page
 tag_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/tag-bg.png
@@ -214,7 +214,7 @@ valine:
   verify: false # valine verify code (true/false)
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: zh-TW # i18n: zh-cn/en
+  lang: en # i18n: zh-cn/en
   placeholder: Please leave your footprints # valine comment input placeholder(like: Please leave your footprints )
   guest_info: nick,mail,link #valine comment header info
   bg: /img/comment_bg.png # valine background
@@ -422,7 +422,7 @@ subtitle:
   source: false
   # (如果有英文逗號' , '，請使用轉義字符 &#44;)
   sub:
-    - 从现在开始&#44;努力修行
+    - 今日事&#44;今日畢
     - Never put off till tomorrow what you can do today
 
 
@@ -463,7 +463,7 @@ runtimeshow:
 translate:
   enable: true
   # 默認按鈕顯示文字
-  default: 简
+  default: 繁
   #网站默认语言，1: 繁體中文, 2: 简体中文
   defaultEncoding: 2
   #延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0

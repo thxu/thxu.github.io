@@ -193,14 +193,6 @@ disqus:
 # enable: false
 # uid:
 
-gitalk:
-  enable: true
-  client_id: 3307afc19edbaa45a1ef
-  client_secret: 6ae6ffa062098151e8771a24f388903da6fda783
-  repo: thxu.github.io
-  owner: thxu
-  admin: "['thxu']"
-  
 # gitalk:
 #   enable: false
 #   client_id:
@@ -215,15 +207,15 @@ gitalk:
 
 # valine comment system. https://valine.js.org
 valine:
-  enable: false # if you want use valine,please set this value is true
-  appId: # leancloud application app id
-  appKey: # leancloud application app key
+  enable: true # if you want use valine,please set this value is true
+  appId: WoCvu1umIWD71bhHtUd6Gd3U-gzGzoHsz # leancloud application app id
+  appKey: gPFnie1FvHOnaTdPqXCBYIV8 # leancloud application app key
   notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
-  verify: false # valine verify code (true/false)
+  verify: true # valine verify code (true/false)
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: zh-CN # i18n: zh-cn/en
-  placeholder: Please leave your footprints # valine comment input placeholder(like: Please leave your footprints )
+  lang: zh-cn # i18n: zh-cn/en
+  placeholder: 有什么想说的？ # valine comment input placeholder(like: Please leave your footprints )
   guest_info: nick,mail,link #valine comment header info
   bg: /img/comment_bg.png # valine background
 
@@ -234,7 +226,7 @@ since: 2019
 footer_custom_text:
 
 footer_copyright:
-  enable: true
+  enable: false
 
 ICP:
   enable: false
@@ -586,6 +578,7 @@ CDN:
   gitalk: https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js
   gitalk_css: https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css
   valine: https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js
+  # valine: https://cdnjs.cloudflare.com/ajax/libs/valine/1.3.10/Valine.min.js
 
   # share
   addtoany: https://static.addtoany.com/menu/page.js
