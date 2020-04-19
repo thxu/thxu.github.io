@@ -3,8 +3,12 @@ title: 在Ubuntu18.04中使用docker安装MongoDB数据库
 date: 2020-04-19 15:00:00
 tags:
 	- 个人笔记
+	- Ubuntu
+	- MongoDb
+	- Docker
 categories:
 	- 个人笔记
+	- MongoDb
 ---
 
 ### 1.获取MongoDB镜像

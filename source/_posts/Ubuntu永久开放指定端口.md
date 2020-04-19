@@ -3,8 +3,11 @@ title: Ubuntu永久开放指定端口
 date: 2020-04-19 15:00:00
 tags:
 	- 个人笔记
+	- Ubuntu
+	- 端口开放
 categories:
 	- 个人笔记
+	- Ubuntu
 ---
 
 ### 1.查看已经开启的端口
