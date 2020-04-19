@@ -5,15 +5,15 @@
 # xxx || icon:
 #   xxx || 連結 || icon
 menu:
-  首页: / || fa fa-home
-  时间轴: /archives/ || fa fa-archive
-  标签: /tags/ || fa fa-tags
-  分类: /categories/ || fa fa-folder-open
-  #友链: /link/ || fa fa-link
-  关于: /about/ || fa fa-heart
-  #List||fa fa-list:
-  #  - Music || /music/ || fa fa-music
-  #  - Movie || /movies/ || fa fa-film
+  Home: / || fa fa-home
+  Archives: /archives/ || fa fa-archive
+  Tags: /tags/ || fa fa-tags
+  Categories: /categories/ || fa fa-folder-open
+  Link: /link/ || fa fa-link
+  About: /about/ || fa fa-heart
+  List||fa fa-list:
+    - Music || /music/ || fa fa-music
+    - Movie || /movies/ || fa fa-film
 
 # Favicon
 # ---------------
@@ -38,7 +38,7 @@ highlight_copy: true #代碼複製按鈕
 highlight_lang: true #代碼語言顯示
 highlight_shrink: false # true 全部代碼框不展開，需點擊 '>' 打開 / false 代碼框展開，有'>'點擊按鈕 | none 代碼框展開，不顯示 '>' 按鈕
 
-code_word_wrap: true
+code_word_wrap: false
 
 # copy setting
 # 是否禁止複製（如果禁止，highlight_copy的功能將無效)
@@ -52,8 +52,8 @@ copy:
 #   icon: link || the description
 # ---------------
 social:
-  fa fa-github: https://github.com/thxu || Github
-  fa fa-envelope: mailto:2929458764@qq.com || Email
+  fa fa-github: https://github.com/jerryc127 || Github
+  fa fa-envelope: mailto:xxxxxxx@gmail.com || Email
   fa fa-rss: /atom.xml || RSS
 
 ####    search    ####
@@ -67,7 +67,7 @@ algolia_search:
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
-    hits_stats: '${hits} results found in ${time} ms'
+    hits_stats: "${hits} results found in ${time} ms"
 
 # Local search
 # Please see doc for more details: https://docs.jerryc.me/config.html#本地搜索
@@ -114,19 +114,18 @@ avatar:
 index_img:
 
 # if the banner of page not setting,it will show the top_img
-#default_top_img: /img/index.jpg
-default_top_img: ''
+default_top_img: /img/index.jpg
 
 # the banner image of archive page
-archive_img: ''
+archive_img:
 
 # the banner image of tag page
 # tag page, look like https://xxxxxxxxx.com/tags/butterfly
-tag_img: ''
+tag_img:
 
 # the banner image of category page
 # category page, look like https://xxxxxxxxx.com/categories/butterfly
-category_img: ''
+category_img:
 
 # 如果你有使用hexo-douban，可配置這個
 # douban:
@@ -137,12 +136,12 @@ category_img: ''
 
 cover:
   # 是否顯示文章封面
-  index_enable: false
-  aside_enable: false
-  archives_enable: false
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
   # 封面顯示的位置
   # 三個值可配置 left , right , both
-  position: left
+  position: both
   # 當沒有設置cover時，默認的封面顯示
   default_cover:
     - /img/post.jpg
@@ -156,12 +155,12 @@ lodding_bg:
 # A simple 404 page
 error_404:
   enable: false
-  subtitle: 'Page Not Found'
+  subtitle: "Page Not Found"
   background:
 
 post_meta:
   page:
-    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
     categories: true # true or false 主頁是否顯示分類
     tags: false # true or false 主頁是否顯示標籤
   post:
@@ -257,15 +256,15 @@ gitalk:
 
 # valine comment system. https://valine.js.org
 valine:
-  enable: true # if you want use valine,please set this value is true
-  appId: WoCvu1umIWD71bhHtUd6Gd3U-gzGzoHsz # leancloud application app id
-  appKey: gPFnie1FvHOnaTdPqXCBYIV8 # leancloud application app key
+  enable: false # if you want use valine,please set this value is true
+  appId: # leancloud application app id
+  appKey: # leancloud application app key
   notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
-  verify: true # valine verify code (true/false)
+  verify: false # valine verify code (true/false)
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: zh-cn # i18n: zh-cn/en
-  placeholder: 有什么想说的？ # valine comment input placeholder(like: Please leave your footprints )
+  lang: en # i18n: zh-cn/en
+  placeholder: Please leave your footprints # valine comment input placeholder(like: Please leave your footprints )
   guest_info: nick,mail,link #valine comment header info
   recordIP: false # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
@@ -285,7 +284,7 @@ utterances:
 
 #####     Footer Settings    ####
 # ------------------------------------
-since: 2019
+since: 2020
 
 footer_custom_text:
 
@@ -386,8 +385,8 @@ photofigcaption: false
 # 主頁設置
 # 默認top_img全屏，site_info在中間
 # 使用默認, 都無需填寫（建議默認）
-index_site_info_top: 30% # 主頁標題距離頂部距離  例如 300px/300em/300rem/10%
-index_top_img_height: 300px # 主頁top_img高度 例如 300px/300em/300rem  不能使用百分比
+index_site_info_top: # 主頁標題距離頂部距離  例如 300px/300em/300rem/10%
+index_top_img_height: # 主頁top_img高度 例如 300px/300em/300rem  不能使用百分比
 
 # category和tag頁的UI設置
 # index 值代表 UI將與首頁的UI一樣
@@ -425,8 +424,8 @@ canvas_ribbon_piao:
 # canvas_nest
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: true
-  color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  enable: false
+  color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
@@ -434,9 +433,9 @@ canvas_nest:
 
 # 打字效果
 activate_power_mode:
-  enable: true
+  enable: false
   colorful: true # 冒光特效
-  shake: false # 抖動特效
+  shake: true # 抖動特效
 
 # 鼠標點擊效果
 # 避免卡頓，建議只開啟一個
@@ -446,7 +445,7 @@ fireworks:
 
 # 點擊出現愛心
 click_heart:
-  enable: true
+  enable: false
 
 # 點擊出現文字，文字可自行修改
 ClickShowText:
@@ -465,7 +464,7 @@ display_mode: light
 beautify:
   enable: false
   title-prefix-icon: '\f0c1'
-  title-prefix-icon-color: '#F47466'
+  title-prefix-icon-color: "#F47466"
 
 # 全局字體
 font:
@@ -499,12 +498,12 @@ subtitle:
   # source: 3  調用一句網（簡體） http://yijuzhan.com/
   # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: 2
-  ## (如果有英文逗號' , '，請使用轉義字符 &#44;)
-  ## 如果關閉打字效果，subtitle只會顯示sub的第一行文字
-  #sub:
-  #  - 今日事&#44;今日畢
-  #  - Never put off till tomorrow what you can do today
+  source: false
+  # (如果有英文逗號' , '，請使用轉義字符 &#44;)
+  # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
+  sub:
+    - 今日事&#44;今日畢
+    - Never put off till tomorrow what you can do today
 
 # fontawesome圖標
 # 默認使用的是 fontawesome v4版本的圖標
@@ -517,7 +516,7 @@ fontawesome_v5:
 aside:
   enable: true
   mobile: true # 手機頁面（ 顯示寬度 < 768px ）是否顯示aside內容
-  position: left # left or right
+  position: right # left or right
   card_author: true
   card_announcement: true
   card_recent_post: true
@@ -528,7 +527,7 @@ aside:
 
 # 網站公告
 announcement:
-  content: 感谢访问本站，若喜欢请收藏 ^_^
+  content: 感謝訪問本站，若喜歡請收藏 ^_^
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -542,7 +541,7 @@ busuanzi:
 # 也可以寫成 年/月/日 時間
 runtimeshow:
   enable: true
-  start_date: 11/25/2019 00:00:00
+  start_date: 6/7/2018 00:00:00
 
 ####   右下角按鈕  ####
 #----------------------------------------------
@@ -556,11 +555,11 @@ translate:
   #延遲時間,若不在前, 要設定延遲翻譯時間, 如100表示100ms,默認為0
   translateDelay: 0
   #博客網址
-  cookieDomain: 'https://thxu.site'
+  cookieDomain: "https://xxx/"
   #當文字是簡體時，按鈕顯示的文字
-  msgToTraditionalChinese: '繁'
+  msgToTraditionalChinese: "繁"
   #當文字是繁體時，按鈕顯示的文字
-  msgToSimplifiedChinese: '简'
+  msgToSimplifiedChinese: "簡"
 
 #閲讀模式
 readmode:
@@ -597,10 +596,10 @@ fancybox:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: true
+  enable: false
   position: bottom-left
-  bg_light: '#49b1f5' #light mode時彈窗背景
-  bg_dark: '#2d3035' #dark mode時彈窗背景
+  bg_light: "#49b1f5" #light mode時彈窗背景
+  bg_dark: "#2d3035" #dark mode時彈窗背景
 
 #百度推送
 baidu_push:
